@@ -22,14 +22,15 @@ These problems lead to poor analytical outcomes, such as inaccurate matching bet
 
 Used Conditional Formatting and Remove Duplicates to identify duplicate company names.
 Duplicates were highlighted (as shown in the screenshot below) and manually reviewed before deletion.
-<img width="530" height="659" alt="image" src="https://github.com/user-attachments/assets/4993f2be-095a-4d08-948e-b51bbf581b31" />
+
+<img width="430" height="559" alt="image" src="https://github.com/user-attachments/assets/4993f2be-095a-4d08-948e-b51bbf581b31" />
 
 ### 2. Company Name Validation
 
 Checked for invalid or incomplete company names using length-based logic:
 
 =IF(OR(LEN(A4)<3,LEN(A4)>50),"FALSE","TRUE")
-<img width="898" height="691" alt="image" src="https://github.com/user-attachments/assets/f3d06bdf-8c09-42b2-b033-52891d701eba" />
+<img width="798" height="591" alt="image" src="https://github.com/user-attachments/assets/f3d06bdf-8c09-42b2-b033-52891d701eba" />
 
 
 Company names shorter than 3 or longer than 50 characters were marked invalid.
