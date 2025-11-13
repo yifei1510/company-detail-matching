@@ -18,7 +18,13 @@ These problems lead to poor analytical outcomes, such as inaccurate matching bet
 
 ## Methodology
 
-### 1. Company Name Validation
+### 1. Duplicate Detection and Removal
+
+Used Conditional Formatting and Remove Duplicates to identify duplicate company names.
+Duplicates were highlighted (as shown in the screenshot below) and manually reviewed before deletion.
+<img width="530" height="659" alt="image" src="https://github.com/user-attachments/assets/4993f2be-095a-4d08-948e-b51bbf581b31" />
+
+### 2. Company Name Validation
 
 Checked for invalid or incomplete company names using length-based logic:
 
@@ -30,14 +36,6 @@ Company names shorter than 3 or longer than 50 characters were marked invalid.
 
 Additional checks were performed to detect numbers, symbols, and non-English characters.
 
-Duplicates were identified and removed using:
-
-Conditional Formatting → Highlight Duplicate Values
-
-Data → Remove Duplicates
-
-Example: Multiple entries for Tasmanian Government and JPS Medical Recruitment were consolidated into single records.
-<img width="530" height="659" alt="image" src="https://github.com/user-attachments/assets/4993f2be-095a-4d08-948e-b51bbf581b31" />
 
 ### 2. Company Detail Validation
 
@@ -63,12 +61,9 @@ ISNUMBER(SEARCH("Likes",B84))
 Removed irrelevant website text such as “Welcome to our page”, “About us”, or “Follow us”.
 <img width="940" height="365" alt="image" src="https://github.com/user-attachments/assets/daed45c8-763a-46f8-81ff-56b893fda912" />
 
-### 3. Duplicate Detection and Removal
-
-Used Conditional Formatting and Remove Duplicates to identify duplicate company names.
-Duplicates were highlighted (as shown in the screenshot below) and manually reviewed before deletion.
 
 ### Results
+
 Metric	Before Cleaning	After Cleaning
 Total Records	3,000+	2,500 (approx.)
 Invalid Company Names	200+	0
