@@ -27,13 +27,31 @@ Duplicates were highlighted (as shown in the screenshot below) and manually revi
 
 ### 2. Company Name Validation
 
-Checked for invalid or incomplete company names using length-based logic:
+To ensure data completeness and consistency, company names were validated using a length-based rule. Any value shorter than 3 characters or longer than 50 characters was flagged as invalid using the following formula:
 
 =IF(OR(LEN(A4)<3,LEN(A4)>50),"FALSE","TRUE")
 <img width="798" height="591" alt="image" src="https://github.com/user-attachments/assets/f3d06bdf-8c09-42b2-b033-52891d701eba" />
 
+Validation Result
 
-Company names shorter than 3 or longer than 50 characters were marked invalid.
+A total of invalid company names were detected during this quality check. Examples include: 
+
+EY
+RB
+SG
+WS
+
+These entries are too short and potentially represent abbreviations or incomplete business names. In addition, several very long company names exceeded the 50-character threshold and may require trimming, abbreviation, or standardisation.
+
+Action Required
+
+All invalid entries have been flagged and require further verification, correction, or enrichment in order to:
+
+Replace abbreviated names with full official registered names
+
+Confirm whether the truncated long names match legal business records
+
+Ensure the dataset meets standard naming conventions for future reporting and matching
 
 Additional checks were performed to detect numbers, symbols, and non-English characters.
 
