@@ -2,13 +2,13 @@
 
 ## Executive Summary
 
-The Company Detail Matching project focuses on cleaning and matching company information to improve data accuracy, consistency, and usability. The dataset contains thousands of company records collected from various online sources. By identifying inconsistencies, duplicates, and invalid entries, the project aims to ensure reliable company–job linkages and build a solid foundation for future data analysis, visualization, and reporting.
+The Company Detail Matching project focuses on cleaning and matching company information to improve data accuracy, consistency, and usability. The dataset contains thousands of company records collected from various online sources. By identifying inconsistencies, duplicates, and invalid entries, the project aims to ensure reliable information of companies and positions, and build a solid foundation for future data analysis, visualization, and reporting.
 
 ## Business Problem
 
 Company data often suffers from issues such as:
 
-Inconsistent naming conventions (e.g., “ABC Pty Ltd” vs. “ABC Limited”).
+Inconsistent naming conventions.
 
 Irregular or missing company descriptions containing irrelevant website text (“Welcome to our page”, “Visit us for more info”, etc.).
 
