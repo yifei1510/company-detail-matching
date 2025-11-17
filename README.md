@@ -40,7 +40,7 @@ Additional checks were performed to detect numbers, symbols, and non-English cha
 
 ### 2. Company Detail Validation
 
-Validated the company description (Detail) field to ensure completeness and relevance.
+Validated the company description(Detail) field to ensure completeness and relevance.
 
 a. Length Check
 =IF(OR(LEN(B2)<40,LEN(B2)>300),"FALSE","TRUE")
